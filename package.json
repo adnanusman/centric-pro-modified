@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "centric-pro",
+  "version": "1.0.0",
+  "description": "CENTRIC THEME https://my.studiopress.com/themes/centric/",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "private-repo": "git+ssh://creactive@smallbizhostin.com:22222/home/creactive/themes/genesis_themes/centric-pro.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

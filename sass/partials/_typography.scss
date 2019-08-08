@@ -1,0 +1,55 @@
+.site-title,
+.shrink .site-title {
+	font-size: 24px;
+}
+
+.site-header .bp-phone:before,
+.site-container .bp-phone:before,
+.footer-widgets .bp-phone:before {
+	font-family: Fontawesome;
+	content: "\f095";
+}
+
+.site-header .header-widget-area .widget_text {
+	font-size:16px;
+}
+
+#responsive-menu-icon:after {
+	content:"Menu";
+	text-transform:uppercase;
+	font-size:16px;
+	line-height: 1;
+	font-family:'Spinnaker', sans-serif;
+}
+
+.home-widgets .home-widgets-3 .widget,
+.home-widgets .home-widgets-4 .widget,
+.home-widgets .home-widgets-5 .widget {
+	text-align: initial;
+}
+
+.home .widget_caldera_forms_widget,
+.home .caldera-grid .btn.button {
+	font-size:12px;
+	text-align:left;
+}
+
+.home .widget_caldera_forms_widget .widget-title {
+	text-align:center;
+	margin-bottom:0.5em;
+	font-style:italic;
+}
+
+.sidebar-content .sidebar {
+	text-align: initial;
+}
+
+.footer-widgets {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 782px) {
+	.site-header .site-title {
+		font-size: 24px;
+	}
+}
