@@ -78,3 +78,10 @@ function creactive_footer_creds_filter( $creds ) {
 
 	return $creds;
 }
+
+/* modified centric */
+function add_modified_styles() {
+    wp_enqueue_style('modified-centric', get_stylesheet_directory_uri() . '/modified.css', array(), '1.0.0', 'all');
+}
+
+add_action('wp_enqueue_scripts', 'add_modified_styles');
