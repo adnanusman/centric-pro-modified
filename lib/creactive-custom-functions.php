@@ -169,3 +169,14 @@ function business_before_footer_widget_area() { ?>
 	) ); ?>
 	</div></div> <?php
 }
+
+// creactive centric modified
+function creactive_add_header_section() {
+	?>
+
+	<div>test</div>
+
+	<?php
+}
+
+add_action('before_genesis_header_wrap', 'creactive_add_header_section');

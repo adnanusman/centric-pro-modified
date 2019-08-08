@@ -253,5 +253,6 @@ genesis_register_sidebar( array(
 ) );
 
 # Creactive's modifications:
+include_once( get_stylesheet_directory() . '/lib/add_before_after_structural_wraps.php' );
 include_once( get_stylesheet_directory() . '/lib/creactive-defaults.php' );
 include_once( get_stylesheet_directory() . '/lib/creactive-custom-functions.php' );
