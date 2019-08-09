@@ -17,6 +17,19 @@
   color: #222;
 }
 
+.site-header .bp-phone:before {
+  display: none;
+}
+
+.site-header .bp-phone {
+  background: #950000;
+  padding: 0 5px;
+}
+
+.site-header .bp-phone a {
+  color: #fff;
+}
+
 .before-header-right > section:last-of-type {
   margin-right: 0;
 }
@@ -32,6 +45,10 @@
 .before-header-right .bp-contact-card>div {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.bumper {
+  display: none;
 }
 
 @media all and (min-width: 1024px) { 
