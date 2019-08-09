@@ -52,6 +52,15 @@
   color: #222;
 }
 
+.page-template-services-page .bumper, .single .bumper {
+	min-height: 80px;
+}
+
+.creactive-featured-image {
+  background: #fff;
+  text-align: center;
+}
+
 .centered {
   text-align: center;
 }

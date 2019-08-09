@@ -113,10 +113,10 @@ function centric_home_widgets() {
 
 	echo '<div id="home-widgets" class="home-widgets">';
 
-	genesis_widget_area( 'home-widgets-2', array(
-		'before' => '<div class="home-widgets-2 widget-area">',
-		'after'  => '</div>',
-	) );
+	// genesis_widget_area( 'home-widgets-2', array(
+	// 	'before' => '<div class="home-widgets-2 widget-area">',
+	// 	'after'  => '</div>',
+	// ) );
 
 	genesis_widget_area( 'home-widgets-3', array(
 		'before' => '<div class="home-widgets-3 color-section widget-area clearfix"><div class="wrap">',
