@@ -66,6 +66,13 @@ function featured_background_images() {
 
 add_action ('wp_head', 'featured_background_images');
 
+// Register before header right widget area.
+genesis_register_sidebar( array(
+	'id'          => 'before-header-right',
+	'name'        => __( 'Before Header Right', 'centric-pro' ),
+	'description' => __( 'This is a small header that appears before the main header', 'centric-pro' ),
+) );
+
 // Site Wide CTA widget area.
 genesis_register_sidebar( array(
 	'id'          => 'site-wide-cta',
@@ -172,11 +179,19 @@ function business_before_footer_widget_area() { ?>
 
 // creactive centric modified
 function creactive_add_header_section() {
-	?>
+	if(is_active_sidebar('before-header-right')) { ?>
 
-	<div>test</div>
+		<div class="before-header">
+			<div class="before-header-right">
+				<?php genesis_widget_area( 'before-header-right', array(
+					'before' => '',
+					'after' => '',
+				)); ?>
+			</div>
+		</div>
 
 	<?php
+	}
 }
 
 add_action('before_genesis_header_wrap', 'creactive_add_header_section');
