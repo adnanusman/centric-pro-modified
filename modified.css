@@ -116,4 +116,7 @@
   .before-header-right .simple-social-icons {
     display: none;
   }
+  .page-template-services-page .bumper, .single .bumper {
+    display: none;
+  }
 }
