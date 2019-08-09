@@ -47,8 +47,13 @@
   margin-bottom: 0;
 }
 
-.bumper {
-  display: none;
+.home-widgets .home-widgets-3.widget-area {
+  background: #fff;
+  color: #222;
+}
+
+.centered {
+  text-align: center;
 }
 
 @media all and (min-width: 1024px) { 
