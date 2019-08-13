@@ -195,3 +195,15 @@ function creactive_add_header_section() {
 }
 
 add_action('before_genesis_header_wrap', 'creactive_add_header_section');
+
+function creactive_post_featured_image() {
+	?>
+
+	<div class="creactive-featured-image">
+		<?php the_post_thumbnail('medium'); ?>
+	</div>
+
+	<?php
+}
+
+add_action('genesis_entry_header', 'creactive_post_featured_image', 0);

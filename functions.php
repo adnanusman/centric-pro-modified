@@ -120,7 +120,8 @@ add_action( 'genesis_before', 'centric_post_title' );
  */
 function centric_post_title() {
 
-	if ( is_single() || is_page() and !is_page_template() ) {
+	// was : 	if ( is_single() || is_page() and !is_page_template() ) {
+	if ( is_page() and !is_page_template() ) {
 		remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 		add_action( 'genesis_after_header', 'centric_open_post_title', 1 );
 		add_action( 'genesis_after_header', 'genesis_do_post_title', 2 );
