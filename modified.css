@@ -1,4 +1,12 @@
-.site-header {background-color:#fff;} .site-header {box-shadow: 0 2px 12px 2px rgba(0,0,0,0.5);} .site-header .widget-area,.site-header .site-title a,.site-header .widget-area a,.site-header .widget-area a:hover,.site-header .genesis-nav-menu li a,#responsive-menu-icon:after,#responsive-menu-icon:before,.site-header .bp-phone:before,.site-header .bp-phone {color:#13afdf;font-weight:700;} .site-header .genesis-nav-menu li a:hover, .site-header .genesis-nav-menu .current-menu-item>a {background-color:rgba(0,0,0,0.02);color:rgba(0,0,0,0.5);} .site-header .genesis-nav-menu li li a {color:#fff;}
+.site-header {background-color:#fff;} .site-header {box-shadow: 0 2px 12px 2px rgba(0,0,0,0.5);} .site-header .widget-area,.site-header .site-title a,.site-header .widget-area a,.site-header .widget-area a:hover,.site-header .genesis-nav-menu li a,#responsive-menu-icon:after,#responsive-menu-icon:before,.site-header .bp-phone:before,.site-header .bp-phone {color:#0066cc;font-weight:700;} .site-header .genesis-nav-menu li a:hover, .site-header .genesis-nav-menu .current-menu-item>a {background-color:rgba(0,0,0,0.02);color:rgba(0,0,0,0.5);} .site-header .genesis-nav-menu li li a {color:#fff;}
+
+.home .home-featured, .home .home-widgets-2, .home .home-widgets-3, .home .home-widgets-4, .home .home-widgets-5 {
+  border-bottom: 80px #0066cc solid;
+}
+
+.front-page-cta, #appointment, .before-footer {
+  background: #0066cc;
+}
 
 .before-header {
   padding: 0 40px;
@@ -17,6 +25,19 @@
   color: #222;
 }
 
+.site-header .bp-phone:before {
+  display: none;
+}
+
+.site-header .bp-phone {
+  background: #950000;
+  padding: 0 5px;
+}
+
+.site-header .bp-phone a {
+  color: #fff;
+}
+
 .before-header-right > section:last-of-type {
   margin-right: 0;
 }
@@ -32,6 +53,24 @@
 .before-header-right .bp-contact-card>div {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.home-widgets .home-widgets-3.widget-area {
+  background: #fff;
+  color: #222;
+}
+
+.page-template-services-page .bumper, .single .bumper {
+	min-height: 80px;
+}
+
+.creactive-featured-image {
+  background: #fff;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
 }
 
 @media all and (min-width: 1024px) { 
@@ -75,6 +114,9 @@
     display: none;
   }
   .before-header-right .simple-social-icons {
+    display: none;
+  }
+  .page-template-services-page .bumper, .single .bumper {
     display: none;
   }
 }
