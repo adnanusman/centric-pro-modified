@@ -173,24 +173,47 @@
   font-family: 'fontawesome';
   content: '\f10b';
   display: block;
+  transition: 0.6s ease-out;
 }
 
 .check-icon:before {
   font-family: 'fontawesome';
   content: '\f058';
   display: block;
+  transition: 0.6s ease-out;
 }
 
 .tools-icon:before {
   font-family: 'fontawesome';
   content: '\f0ad';
   display: block;
+  transition: 0.6s ease-out;
 }
 
 .cogs-icon:before {
   font-family: 'fontawesome';
   content: '\f085';
   display: block;  
+  transition: 0.6s ease-out;
+}
+
+.red-circle .mobile-icon:hover::before, 
+.red-circle .check-icon:hover::before, 
+.red-circle .tools-icon:hover::before,
+.red-circle .cogs-icon:hover::before {
+  transform: rotateZ(360deg);
+}
+
+.smile-icon:before {
+  font-family: 'fontawesome';
+  content: '\f118';
+  display: block;
+}
+
+.mapmarker-icon:before {
+  font-family: 'fontawesome';
+  content: '\f041';
+  display: block;
 }
 
 .circle-caption {
@@ -218,6 +241,11 @@
   border-top: 3px solid #98002d;
   margin-right: 10px;  
   margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wcu-blurb-container:hover {
+  transform: translateY(-10px);
 }
 
 .wcu-blurb-container:nth-child(2), .wcu-blurb-container:last-of-type {
