@@ -97,10 +97,10 @@ function centric_body_class( $classes ) {
  */
 function centric_home_featured_widget() {
 
-	genesis_widget_area( 'home-widgets-1', array(
-		'before' => '<div class="home-featured"><div class="wrap"><div class="home-widgets-1 color-section widget-area">',
-		'after'  => '</div></div></div>',
-	) );
+	// genesis_widget_area( 'home-widgets-1', array(
+	// 	'before' => '<div class="home-featured"><div class="wrap"><div class="home-widgets-1 color-section widget-area">',
+	// 	'after'  => '</div></div></div>',
+	// ) );
 
 }
 

@@ -66,6 +66,14 @@ function featured_background_images() {
 
 add_action ('wp_head', 'featured_background_images');
 
+// Register before header left widget area.
+genesis_register_sidebar( array(
+	'id'          => 'before-header-left',
+	'name'        => __( 'Before Header Left', 'centric-pro' ),
+	'description' => __( 'This is a small header that appears before the main header', 'centric-pro' ),
+) );
+
+
 // Register before header right widget area.
 genesis_register_sidebar( array(
 	'id'          => 'before-header-right',
@@ -179,19 +187,29 @@ function business_before_footer_widget_area() { ?>
 
 // creactive centric modified
 function creactive_add_header_section() {
-	if(is_active_sidebar('before-header-right')) { ?>
+	?>
+	<div class="before-header">
 
-		<div class="before-header">
-			<div class="before-header-right">
-				<?php genesis_widget_area( 'before-header-right', array(
+		<?php if(is_active_sidebar('before-header-left')) { ?>
+			<div class="before-header-left">
+				<?php genesis_widget_area( 'before-header-left', array(
 					'before' => '',
 					'after' => '',
 				)); ?>
 			</div>
-		</div>
-
+		<?php }; ?>
+			
+		<?php if(is_active_sidebar('before-header-right')) { ?>
+				<div class="before-header-right">
+					<?php genesis_widget_area( 'before-header-right', array(
+						'before' => '',
+						'after' => '',
+					)); ?>
+				</div>
+		<?php }; ?>
+	</div>
+	
 	<?php
-	}
 }
 
 add_action('before_genesis_header_wrap', 'creactive_add_header_section');
