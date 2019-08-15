@@ -1,5 +1,13 @@
 .site-header {background-color:#fff;} .site-header {box-shadow: 0 2px 12px 2px rgba(0,0,0,0.5);} .site-header .widget-area,.site-header .site-title a,.site-header .widget-area a,.site-header .widget-area a:hover,.site-header .genesis-nav-menu li a,#responsive-menu-icon:after,#responsive-menu-icon:before,.site-header .bp-phone:before,.site-header .bp-phone {color:#0066cc;font-weight:700;} .site-header .genesis-nav-menu li a:hover, .site-header .genesis-nav-menu .current-menu-item>a {background-color:rgba(0,0,0,0.02);color:rgba(0,0,0,0.5);} .site-header .genesis-nav-menu li li a {color:#fff;}
 
+.site-header .title-area .site-title a {
+	text-shadow: 1px 2px 3px #888;
+}
+
+.site-header .title-area .site-title a:hover {
+	color: #003366;
+}
+
 .home .home-featured, .home .home-widgets-2, .home .home-widgets-3, .home .home-widgets-4, .home .home-widgets-5 {
   border-bottom: 80px #0066cc solid;
 }
@@ -71,6 +79,37 @@
 
 .centered {
   text-align: center;
+}
+
+.textwidget li:before, .entry-content li:before {
+	font-family: 'fontawesome';
+	content: '\f0a9';
+	margin-right: 10px;
+	color: orange;
+}
+
+.textwidget ul li, .entry-content ul li {
+	list-style-type: none;
+	margin: 0;
+}
+
+.textwidget ul, .entry-content ul {
+	margin: 15px 0;
+}
+
+.button.accent {
+  background: #e2a84b;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #222;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.3s;
+}
+
+.button.accent:active {
+  box-shadow: 0 3px 0 #222;
+  top: 3px;
 }
 
 @media all and (min-width: 1024px) { 
