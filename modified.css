@@ -1,4 +1,30 @@
-.site-header {background-color:#fff;} .site-header {box-shadow: 0 2px 12px 2px rgba(0,0,0,0.5);} .site-header .widget-area,.site-header .site-title a,.site-header .widget-area a,.site-header .widget-area a:hover,.site-header .genesis-nav-menu li a,#responsive-menu-icon:after,#responsive-menu-icon:before,.site-header .bp-phone:before,.site-header .bp-phone {color:#0066cc;font-weight:700;} .site-header .genesis-nav-menu li a:hover, .site-header .genesis-nav-menu .current-menu-item>a {background-color:rgba(0,0,0,0.02);color:rgba(0,0,0,0.5);} .site-header .genesis-nav-menu li li a {color:#fff;}
+.site-header {
+  background-color:#fff;
+} 
+
+.site-header {
+  box-shadow: 0 2px 12px 2px rgba(0,0,0,0.5);
+} 
+
+.site-header .widget-area,
+.site-header .site-title a,
+.site-header .widget-area a,
+.site-header .widget-area a:hover,
+.site-header .genesis-nav-menu li a,
+#responsive-menu-icon:after,
+#responsive-menu-icon:before,
+.site-header .bp-phone:before,
+.site-header .bp-phone {
+  color:#222;font-weight:700;
+} 
+
+.site-header .genesis-nav-menu li a:hover, 
+.site-header .genesis-nav-menu .current-menu-item>a {
+  background-color:rgba(0,0,0,0.02);color:rgba(0,0,0,0.5);
+} 
+.site-header .genesis-nav-menu li li a {
+  color:#fff;
+}
 
 .site-header .title-area .site-title a {
 	text-shadow: 1px 2px 3px #888;
@@ -8,12 +34,30 @@
 	color: #003366;
 }
 
-.home .home-featured, .home .home-widgets-2, .home .home-widgets-3, .home .home-widgets-4, .home .home-widgets-5 {
-  border-bottom: 80px #0066cc solid;
+.home .home-featured, 
+.home .home-widgets-2, 
+.home .home-widgets-3, 
+.home .home-widgets-4, .home .home-widgets-5 {
+  border-bottom: 0;
 }
 
-.front-page-cta, #appointment, .before-footer {
-  background: #0066cc;
+/* .front-page-cta {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(0, 0, 0, 0.65)
+  ),  url('/wp-content/uploads/Stephanie-Vieyra-FB776D63-0AAC-44AC-8334-E52B2DBD2938.jpeg') no-repeat;
+  background-size: cover;
+} */
+
+.front-page-cta:after {
+  background: rgba(0,0,0,0.4);
+}
+
+#appointment {
+  background: transparent; 
+}
+.before-footer {
+  display: none;
 }
 
 .before-header {
@@ -82,16 +126,13 @@
   margin-bottom: 0;
 }
 
-.home .home-featured, .home .home-widgets-2, .home .home-widgets-3, .home .home-widgets-4, .home .home-widgets-5 {
-  border-bottom: 0;
-}
-
 .home-widgets .home-widgets-3.widget-area {
   background: #fff;
   color: #222;
 }
 
-.page-template-services-page .bumper, .single .bumper {
+.page-template-services-page .bumper, 
+.single .bumper {
 	min-height: 80px;
 }
 
@@ -104,7 +145,8 @@
   text-align: center;
 }
 
-.textwidget li:before, .entry-content li:before {
+.textwidget li:before, 
+.entry-content li:before {
 	font-family: 'fontawesome';
 	content: '\f0a9';
 	margin-right: 10px;
@@ -172,32 +214,36 @@
 .mobile-icon:before {
   font-family: 'fontawesome';
   content: '\f10b';
-  display: block;
+  display: inline-block;
   transition: 0.6s ease-out;
 }
 
 .check-icon:before {
   font-family: 'fontawesome';
   content: '\f058';
-  display: block;
+  display: inline-block;
   transition: 0.6s ease-out;
 }
 
 .tools-icon:before {
   font-family: 'fontawesome';
   content: '\f0ad';
-  display: block;
+  display: inline-block;
   transition: 0.6s ease-out;
 }
 
-.cogs-icon:before {
+.cogs-icon:before, .site-title:before {
   font-family: 'fontawesome';
   content: '\f085';
-  display: block;  
+  display: inline-block;  
   transition: 0.6s ease-out;
 }
 
-.red-circle .mobile-icon:hover::before, 
+.site-title:before {
+  margin-right: 10px;
+}
+
+.red-circle .smile-icon:hover::before, 
 .red-circle .check-icon:hover::before, 
 .red-circle .tools-icon:hover::before,
 .red-circle .cogs-icon:hover::before {
@@ -207,13 +253,14 @@
 .smile-icon:before {
   font-family: 'fontawesome';
   content: '\f118';
-  display: block;
+  display: inline-block;
+  transition: 0.6s ease-out;
 }
 
 .mapmarker-icon:before {
   font-family: 'fontawesome';
   content: '\f041';
-  display: block;
+  display: inline-block;
 }
 
 .circle-caption {
@@ -248,7 +295,8 @@
   transform: translateY(-10px);
 }
 
-.wcu-blurb-container:nth-child(2), .wcu-blurb-container:last-of-type {
+.wcu-blurb-container:nth-child(2), 
+.wcu-blurb-container:last-of-type {
   margin-right: 0;
 }
 
@@ -321,7 +369,9 @@
   .before-header-right .simple-social-icons {
     display: none;
   }
-  .page-template-services-page .bumper, .single .bumper {
+  .page-template-default .bumper, 
+  .page-template-services-page .bumper, 
+  .single .bumper {
     display: none;
   }
   .circle-container {
@@ -340,5 +390,6 @@
   }
   .wcu-blurb-container {
     width: 100%;
+    margin-right: 0;
   }
 }
