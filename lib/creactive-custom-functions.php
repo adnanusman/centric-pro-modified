@@ -73,12 +73,17 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is a small header that appears before the main header', 'centric-pro' ),
 ) );
 
-
 // Register before header right widget area.
 genesis_register_sidebar( array(
 	'id'          => 'before-header-right',
 	'name'        => __( 'Before Header Right', 'centric-pro' ),
 	'description' => __( 'This is a small header that appears before the main header', 'centric-pro' ),
+) );
+
+genesis_register_sidebar( array(
+	'id'          => 'logo-display',
+	'name'        => __( 'Logo display', 'centric-pro' ),
+	'description' => __( 'A place to show the logos for companies they work with', 'centric-pro' ),
 ) );
 
 // Site Wide CTA widget area.

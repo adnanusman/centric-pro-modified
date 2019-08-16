@@ -136,6 +136,10 @@
 	min-height: 80px;
 }
 
+.sub-menu li {
+  background: #888;
+}
+
 .creactive-featured-image {
   background: #fff;
   text-align: center;
@@ -160,6 +164,10 @@
 
 .textwidget ul, .entry-content ul {
 	margin: 15px 0;
+}
+
+.logo-display .wrap .widget:first-child {
+  padding-bottom: 0px;
 }
 
 .button.accent {
@@ -243,7 +251,7 @@
   margin-right: 10px;
 }
 
-.red-circle .smile-icon:hover::before, 
+.red-circle .mobile-icon:hover::before, 
 .red-circle .check-icon:hover::before, 
 .red-circle .tools-icon:hover::before,
 .red-circle .cogs-icon:hover::before {
@@ -321,7 +329,32 @@
   padding-bottom: 20px;
 }
 
+/* blurbs services */
+
+.home-widgets-2 .featured-content img {
+  border-radius: 0;
+}
+
+.entry-container {
+  position: relative;
+  background: #fff;
+  margin-top: -100px;
+  transition: 0.6s ease-in-out;
+  padding: 20px 10px;
+}
+
+.entry-container .entry-title a {
+  color: #0066cc;
+}
+
+.category-services:hover > .entry-container, .entry-container:hover {
+  margin-top: -150px;
+}
+
 @media all and (min-width: 1024px) { 
+  .site-header .widget-area {
+    width: 640px;
+  }
   .before-header-right > section {
     margin-right: 10px;
   }
