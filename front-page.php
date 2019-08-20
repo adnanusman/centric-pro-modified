@@ -118,6 +118,11 @@ function centric_home_widgets() {
 		'after'  => '</div></div>',
 	) );
 
+	genesis_widget_area( 'home-widgets-2', array(
+		'before' => '<div class="home-widgets-2 widget-area">',
+		'after'  => '</div>',
+	) );
+
 	genesis_widget_area( 'home-widgets-4', array(
 		'before' => '<div class="home-widgets-4 dark-section widget-area clearfix"><div class="wrap">',
 		'after'  => '</div></div>',
@@ -131,11 +136,6 @@ function centric_home_widgets() {
 	genesis_widget_area( 'home-widgets-5', array(
 		'before' => '<div class="home-widgets-5 widget-area clearfix"><div class="wrap">',
 		'after'  => '</div></div>',
-	) );
-
-	genesis_widget_area( 'home-widgets-2', array(
-		'before' => '<div class="home-widgets-2 widget-area">',
-		'after'  => '</div>',
 	) );
 
 	genesis_widget_area( 'home-widgets-6', array(
