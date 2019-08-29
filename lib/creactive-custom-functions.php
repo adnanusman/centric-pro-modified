@@ -230,3 +230,13 @@ function creactive_post_featured_image() {
 }
 
 add_action('genesis_entry_header', 'creactive_post_featured_image', 0);
+
+function creactive_add_logo() {
+	?>
+
+	<img src="https://eagleeye.creactivemediagroup.com/wp-content/uploads/cropped-admin-ajax-1-e1566954305522.jpeg" alt="<?php get_bloginfo('name')?>">
+	
+	<?php
+}
+
+add_action('genesis_site_title', 'creactive_add_logo', 0);
